@@ -1,10 +1,12 @@
 // server.js
 // load the things we need
-var express = require('express');
-var request = require('request');
-var app = express();
+const express = require('express');
+const request = require('request');
+const app = express();
 
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
+
+const zoek = require('./zoek')
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -15,11 +17,16 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
     res.render('index', {
+      locatie: '',
+      maps: '',
+      lijnen: '',
     });
 });
 
-app.post('/result', function(req, res) {
-    // console.log(req.body.stad);
+app.post('/zoek', zoek)
+
+/*app.post('/result', function(req, res) {
+    console.log(req.body);
     var s_d = ' ';
     request('https://www.delijn.be/rise-api-core/locations/verkooppunten/' + req.body.stad, function (error, response, body) {
       var d = JSON.parse(body);
@@ -50,8 +57,7 @@ app.post('/result', function(req, res) {
       });
     });
 });
+*/
 
 
-
-
-app.listen(8080);
+app.listen(3000);
