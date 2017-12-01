@@ -1,0 +1,15 @@
+WanneerKomtMijnBus.be
+
+'btnZOEK'
+
+=> geoLoc ( client)
+=> coord => haltnr
+
+'Halte: SILSBURG'
+'Info van: 22:35'
+=> halteID
+=> API Vertrekken
+
+'24: 12min'
+'420: 16min'
+'8: 22min'
