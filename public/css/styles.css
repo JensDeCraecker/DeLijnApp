@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800');
+
+body {
+    width: 375px;
+    height: 667px;
+    background-color: #edeff0;
+
+}
+img {
+    margin: 5px 50% 35px 50%;
+
+}
+.container {
+    display: block;
+    /*grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr ;*/
+    padding:0.1%;
+    margin:auto;
+
+
+}
+/***** BUTTONS ****/
+button {
+    border-radius: 15px;
+    border-style: none;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(230,230,230,1);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(230,230,230,1);
+    box-shadow: 7px 7px 5px 0px rgba(230,230,230,1);
+    font-family: 'Nunito', sans-serif;
+}
+.btn{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    color:#575e61;
+    margin-left: 10%;
+    margin-bottom: 3%;  
+}
+
+.btn_vertrek {
+    
+}
+.btn_verkoop {
+    
+}
+.btn_quick {
+    
+}
+.btn_kaart {
+    
+}
+.btn_haltes {
+    
+}
+.btn_info {
+    
+}
+.disabled {
+    
+}
+
+h3 {
+    font-size: 2em;
+       
+}
+button:hover h3 {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+/****** FONT AWESOME ****/
+.fa {
+ margin-bottom: 5px;
+}
