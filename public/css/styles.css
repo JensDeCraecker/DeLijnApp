@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro');
+
+body {
+    width: 375px;
+    height: 667px;
+
+}
+img {
+    margin: 5px 50% 35px 50%;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr ;
+    padding:0.1%;
+    font-family: 'Roboto', sans-serif;
+
+}
+/***** BUTTONS ****/
+button {
+    border-radius: 25px;
+}
+.btn{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    color:#575e61;
+    margin-left: 10%;
+    margin-bottom: 5%;  
+}
+
+.btn_vertrek {
+    
+}
+.btn_verkoop {
+    
+}
+.btn_quick {
+    
+}
+.btn_kaart {
+    
+}
+.btn_haltes {
+    
+}
+.btn_info {
+    
+}
+.disabled {
+    
+}
+
+h3 {
+    font-size: 2em;
+        font-weight: 900;
+}
+button:hover h3 {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+/****** FONT AWESOME ****/
+.fa {
+    margin-top: 0.5em;
+}

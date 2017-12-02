@@ -2,7 +2,9 @@
 // load the things we need
 const express = require('express');
 const request = require('request');
+const path = require("path");
 const app = express();
+
 
 const bodyParser = require('body-parser');
 
@@ -10,6 +12,9 @@ const zoek = require('./zoek')
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(__dirname + '/public'));
+app.use('/static', express.static('./node_modules/font-awesome'))
+
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -23,9 +28,39 @@ app.get('/', function(req, res) {
     });
 });
 
+app.get('/vertrekken', function(req, res) {
+    res.render('vertrekken', {
+    });
+});
+
+app.get('/verkooppunt', function(req, res) {
+    res.render('verkooppunt', {
+    });
+});
+
+app.get('/zoeken', function(req, res) {
+    res.render('zoeken', {
+    });
+});
+
+app.get('/kaarten', function(req, res) {
+    res.render('kaarten', {
+    });
+});
+
+app.get('/haltes', function(req, res) {
+    res.render('haltes', {
+    });
+});
+
+app.get('/info', function(req, res) {
+    res.render('info', {
+    });
+});
+
 app.post('/zoek', zoek)
 
-/*app.post('/result', function(req, res) {
+app.post('/result', function(req, res) {
     console.log(req.body);
     var s_d = ' ';
     request('https://www.delijn.be/rise-api-core/locations/verkooppunten/' + req.body.stad, function (error, response, body) {
@@ -57,7 +92,7 @@ app.post('/zoek', zoek)
       });
     });
 });
-*/
+
 
 
 app.listen(3000);
