@@ -17,11 +17,10 @@ request(url, (err,response,body) => {
     //TODO res.render ('error')
   }
 
-console.log(body);
   const resultaten = JSON.parse(body)
-  const vertrek = getVertrek (resultaten)
+  const vertrekInfo = getVertrek (resultaten)
   res.render('vertrek',{
-    vertrek
+    vertrekInfo
   })
 })
 
@@ -30,8 +29,16 @@ console.log(body);
 module.exports = vertrekken
 
 
+
 const getVertrek = resultaten => {
   let html = ''
-  const { vertrek } = resultaten
+  const { vertrekInfo } = resultaten
   //TODO: ?halte_id=onbekend
+    console.log(resultaten.huidigeDag);
+    Array.from(resultaten).forEach( resultaten => {
+        html += `
+          <li>${resultaten.huidigeDag}</li>
+        `
+    })
+    return html
 }
