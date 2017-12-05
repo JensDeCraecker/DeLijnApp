@@ -10,7 +10,7 @@ img {
     /*margin: 15px 30% 15px 38%;*/
     display: block;
     margin: 15px auto;
-    
+
 }
 .container {
     display: grid;
@@ -43,7 +43,7 @@ button {
 }
 
 .disabled {
-    
+
 }
 
 h3 {
@@ -57,5 +57,19 @@ h3 {
 }
 /****** FONT AWESOME ****/
 #fa {
-    
+
+}
+
+/****** HALTEN  *****/
+
+.lijnnummer{
+  color: red;
+}
+
+.lijntype{
+  color: green;
+}
+
+.lijnomschrijving {
+  color: blue;
 }
