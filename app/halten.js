@@ -46,7 +46,7 @@ const getHaltes = resultaten => {
     lijnen.forEach(lijn => {
       console.log(lijn)
       html += `
-        <p class="lijnnummer">${lijn.lijnNummer}</p> <p class="lijntype">${lijn.lijnType}</p> <p class="lijnomschrijving">${lijn.omschrijving}</p>
+        <div class="lijnItem"> <p class="lijnnummer lijn">${lijn.lijnNummer}</p>  <p class="lijnomschrijving lijn">${lijn.lijnType} | ${lijn.omschrijving}   </p></div>
         `
     })
     console.log(html);

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900');
 body {
     width: 375px;
     height: 667px;
     border: red 1px solid;
     font-family: 'Nunito', sans-serif;
-    background-color:  ;
+    background-color: #EDEFF0 ;
 }
 img {
     /*margin: 15px 30% 15px 38%;*/
@@ -22,11 +22,7 @@ img {
     background-color: white;
     font-size: 600;
 }
-button {
-    border-radius: 25px;
-    border-style: none;
-    background-color: white;
-}
+
 
 .btn{
     width: 325px;
@@ -34,6 +30,7 @@ button {
     background-color: white;
     color:#575e61;
     border: #FFDD00 solid 2px;
+    border-radius: 25px;
     font-family: 'Nunito', sans-serif;
     -webkit-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
     -moz-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
@@ -43,6 +40,7 @@ button {
 }
 
 .disabled {
+    background-color: #bebebe;
 
 }
 
@@ -55,21 +53,80 @@ h3 {
     float:left;
     padding-top:8px;
 }
+h2 {
+    color:#575E61;
+    font-size:1.2em;
+    text-align: center;
+    font-weight: 900;
+}
 /****** FONT AWESOME ****/
-#fa {
-
+.fa {
+    color:#575e61;
 }
 
 /****** HALTEN  *****/
+.inputhalte{
+    font-family: 'Nunito', sans-serif;
+    width: 320px;
+    height: 30px;
+    border: #FFDD00 solid 2px;
+    border-radius: 17px;
+    margin:1% 4.5%;
+    -webkit-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
+    -moz-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
+    box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
+    padding:2%;
+    
+}
+.inputhalte::-webkit-input-placeholder {
+    color: #8f8f8f;
+    opacity: 0.5;
+    content: "|";
+}
+.submit {
+    margin: 2% 29%;
+    border: none;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    color:#575e61;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    -webkit-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
+    -moz-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
+    box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.lijnItem {
+    margin:10px 0px 0px 20px;
+}
+.lijn {
+    background-color: white;
+    
+    border-radius: 15px;
+    font-family: 'Nunito', sans-serif;
+    -webkit-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
+    -moz-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
+    box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
+    padding:1.2%;
+    text-align: center;
+    height:30px;
+    display: inline-flex;
+    color: #575E61;
+    font-weight: 400;
+    font-size:0.75em;
+}
 
 .lijnnummer{
-  color: red;
+    margin-left: 9%;
+    width: 40px;
+    text-align: center;
+    display: inline-flex;   
 }
 
-.lijntype{
-  color: green;
-}
+.lijnomschrijving { 
 
-.lijnomschrijving {
-  color: blue;
+    width: 200px;
+    border: #FFDD00 solid 2px;
 }

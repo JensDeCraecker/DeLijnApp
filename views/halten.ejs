@@ -1,9 +1,10 @@
 
 <% include header%>
 <a href="/" class="back"><button>&lt;</button></a>
-<i class="fa fa-map-signs fa-1x i title" aria-hidden="true"></i><h2>Haltes</h2>
+
+<h2><i class="fa fa-map-signs fa-1x i title" aria-hidden="true"></i>   Haltes</h2>
 <form method="get" action="/halten">
-  <input type="text" name="haltenaam" value="" required>
-  <input type="submit" value="zoekhalte">
+  <input type="text" name="haltenaam" class="inputhalte" value="" placeholder="   | NAAR WAAR ?" required>
+  <input type="submit" value="Zoek halte" class="submit">
 </form>
 <% include footer%>
