@@ -136,7 +136,8 @@ h2 {
 }
 /***** GOOGLE MAPS *****/
 #map {
-    margin-top: 10px;
+    margin:10px auto;
     height: 400px;
-    width: 100%;
+    width: 350px;
+    
 }
