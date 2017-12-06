@@ -4,7 +4,7 @@ body {
     height: 667px;
     border: red 1px solid;
     font-family: 'Nunito', sans-serif;
-    background-color: #EDEFF0 ;
+    background-color:	#d1eeee ;
 }
 img {
     /*margin: 15px 30% 15px 38%;*/
@@ -33,7 +33,7 @@ img {
     background-color: white;
     color:#575e61;
     border: #FFDD00 solid 2px;
-    border-radius: 25px;
+    border-radius: 10px;
     font-family: 'Nunito', sans-serif;
     -webkit-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
     -moz-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
@@ -73,7 +73,7 @@ h2 {
     width: 320px;
     height: 30px;
     border: #FFDD00 solid 2px;
-    border-radius: 17px;
+    border-radius: 10px;
     margin:1% 4.5%;
     -webkit-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
     -moz-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
@@ -107,7 +107,7 @@ h2 {
 .lijn {
     background-color: white;
 
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: 'Nunito', sans-serif;
     -webkit-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
     -moz-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
