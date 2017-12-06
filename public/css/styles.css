@@ -19,10 +19,13 @@ img {
 }
 /***** BUTTONS ****/
 .back {
-    background-color: white;
     font-size: 600;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #575E61;
+    margin-left: 20px;
 }
-
 
 .btn{
     width: 325px;
@@ -76,7 +79,7 @@ h2 {
     -moz-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
     box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
     padding:2%;
-    
+
 }
 .inputhalte::-webkit-input-placeholder {
     color: #8f8f8f;
@@ -103,7 +106,7 @@ h2 {
 }
 .lijn {
     background-color: white;
-    
+
     border-radius: 15px;
     font-family: 'Nunito', sans-serif;
     -webkit-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
@@ -122,10 +125,10 @@ h2 {
     margin-left: 9%;
     width: 40px;
     text-align: center;
-    display: inline-flex;   
+    display: inline-flex;
 }
 
-.lijnomschrijving { 
+.lijnomschrijving {
 
     width: 200px;
     border: #FFDD00 solid 2px;

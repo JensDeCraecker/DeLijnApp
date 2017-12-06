@@ -34,7 +34,7 @@ const getVertrek = resultaten => {
   let html = ''
   const { vertrekInfo } = resultaten
   //TODO: ?halte_id=onbekend
-    console.log(resultaten.huidigeDag);
+    console.log(resultaten.huidigeTijd);
     Array.from(resultaten).forEach( resultaten => {
         html += `
           <li>${resultaten.huidigeDag}</li>
