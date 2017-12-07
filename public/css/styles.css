@@ -89,11 +89,11 @@ h2 {
     content: "|";
 }
 .submit {
-    margin: 2% 29%;
+    margin: 2% 5%;
     border: none;
-    width: 150px;
+    width: 335px;
     height: 40px;
-    background-color: white;
+    background-color: #FFDD00;
     color:#575e61;
     border-radius: 10px;
     font-family: 'Nunito', sans-serif;
@@ -140,5 +140,9 @@ h2 {
     margin:10px auto;
     height: 400px;
     width: 350px;
+    -webkit-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
+    -moz-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
+    box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
+    border: solid 2px #FFDD00;
     
 }
