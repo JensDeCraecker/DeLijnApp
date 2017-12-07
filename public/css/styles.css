@@ -87,6 +87,7 @@ h2 {
     color: #8f8f8f;
     opacity: 0.5;
     content: "|";
+    
 }
 .submit {
     margin: 2% 5%;
@@ -138,8 +139,8 @@ h2 {
 /***** GOOGLE MAPS *****/
 #map {
     margin:10px auto;
-    height: 400px;
-    width: 350px;
+    height: 325px;
+    width: 325px;
     -webkit-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
     -moz-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
     box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
