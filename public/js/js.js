@@ -1,17 +1,12 @@
-/*function succes(position) {
-    let lat = position.coords.latitude;
-    let long = position.coords.longitude;
-    console.log(lat, long);    
-} */
+function succes(position) {
+  let lat = position.coords.latitude;
+  let long = position.coords.longitude;
+    console.log(lat, long);
+}
+
 
 
 function initMap() {
-    function succes(position) {
-    let lat = position.coords.latitude;
-    let long = position.coords.longitude;
-    console.log(lat, long);  
-} 
-
   var uluru = {lat: 51.230016, lng: 4.416220};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 16,
@@ -23,4 +18,4 @@ function initMap() {
   });
 }
 
-navigator.geolocation.getCurrentPosition(initMap);
+navigator.geolocation.getCurrentPosition(succes);
