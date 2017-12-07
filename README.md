@@ -10,4 +10,6 @@
 
     npm install
 
-    nodemon index.js
+    'nodemon index.js' or 'npm run dev'
+
+    ENJOY!!!
