@@ -31,14 +31,13 @@ module.exports = vertrekken
 
 
 const getVertrek = resultaten => {
-  let html = ''
-  const { vertrekInfo } = resultaten
-  //TODO: ?halte_id=onbekend
-    console.log(resultaten.huidigeTijd);
-    Array.from(resultaten).forEach( resultaten => {
-        html += `
-          <li>${resultaten.huidigeDag}</li>
-        `
-    })
-    return html
+  let html =`<div> <p>${resultaten.huidigeDag}</p> | <p>${resultaten.huidigeTijd}</p></div> `
+
+    for (i = 0; i < resultaten.length; i++) {
+        console.log(test); 
+    }
+
+    return html;
+
+  //})
 }

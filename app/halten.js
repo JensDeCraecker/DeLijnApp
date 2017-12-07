@@ -44,12 +44,11 @@ const getHaltes = resultaten => {
   haltes.forEach( halte => {
     const { lijnen } = halte
     lijnen.forEach(lijn => {
-      console.log(lijn)
+      console.log(halte)
       html += `
         <div class="lijnItem"> <p class="lijnnummer lijn">${lijn.lijnNummer}</p>  <p class="lijnomschrijving lijn">${lijn.lijnType} | ${lijn.omschrijving}   </p></div>
         `
     })
-    console.log(html);
   })
 
   return html
