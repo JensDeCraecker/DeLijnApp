@@ -43,7 +43,15 @@ module.exports = vertrekken
 
     for (var i = 0; i < resultaten.lijnen.length; i++) {
       resultaten.lijnen[i]
-      console.log(resultaten.lijnen[i].lijnNummer);
+      lijnen = resultaten.lijnen[i]
+    html += `<div>
+      <p>${lijnen.bestemming}</p>
+      <p>${lijnen.lijnNummer}</p>
+      <p>${lijnen.lijnRichting}</p>
+      <p>${lijnen.lijnType}</p>
+      <p>${lijnen.vertrekTijd}</p>
+    </div>`
+
     }
 
       return html;
