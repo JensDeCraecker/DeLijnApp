@@ -19,7 +19,6 @@ request(url, (err,response,body) => {
 
   const resultaten = JSON.parse(body)
   const vertrekInfo = getVertrek (resultaten)
-  console.log(typeof resultaten.lijnen.lijnNummer);
   res.render('vertrek',{
     vertrekInfo
   })
@@ -40,9 +39,12 @@ module.exports = vertrekken
     let html =`
         <div>
           <p>${resultaten.huidigeDag}</p> | <p>${resultaten.huidigeTijd}</p>
-          <p>${lijnen.lijnNummer}</p>
-
         </div> `
+
+    for (var i = 0; i < resultaten.lijnen.length; i++) {
+      resultaten.lijnen[i]
+      console.log(resultaten.lijnen[i].lijnNummer);
+    }
 
       return html;
 

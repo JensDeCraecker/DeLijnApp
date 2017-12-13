@@ -43,6 +43,7 @@ const getHaltes = resultaten => {
 
   haltes.forEach( halte => {
     const { lijnen } = halte
+    console.log(lijnen);
     lijnen.forEach(lijn => {
       console.log(halte)
       html += `
