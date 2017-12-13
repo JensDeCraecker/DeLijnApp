@@ -19,6 +19,7 @@ request(url, (err,response,body) => {
 
   const resultaten = JSON.parse(body)
   const vertrekInfo = getVertrek (resultaten)
+  console.log(typeof resultaten.lijnen.lijnNummer);
   res.render('vertrek',{
     vertrekInfo
   })
@@ -26,18 +27,24 @@ request(url, (err,response,body) => {
 
 }
 
+
 module.exports = vertrekken
 
+/*if(vertrekInfo.length === 0)
+  return  `
+        <p>Er werd geen halte gevonden</p>
+        <a href="/halten"><button>back</button></a>
+  `*/
 
+  const getVertrek = resultaten => {
+    let html =`
+        <div>
+          <p>${resultaten.huidigeDag}</p> | <p>${resultaten.huidigeTijd}</p>
+          <p>${lijnen.lijnNummer}</p>
 
-const getVertrek = resultaten => {
-  let html =`<div> <p>${resultaten.huidigeDag}</p> | <p>${resultaten.huidigeTijd}</p></div> `
+        </div> `
 
-    for (i = 0; i < resultaten.length; i++) {
-        console.log(test); 
-    }
-
-    return html;
+      return html;
 
   //})
 }
