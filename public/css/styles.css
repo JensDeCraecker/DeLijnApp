@@ -161,33 +161,41 @@ h2 {
 }
 .vertrek {
     font-size:0.85em;
-    border: solid green 1px;
     text-align: center;
-
+    margin: auto 10px ;
 }
 
 .vertreknummer {
     border: solid orange 1px;
     width: 25px;
     height: 15px;
-    margin: auto;
+    margin:5px auto;
+    background-color:white;
+    border-radius:10px;
+    border:#FFDD00 solid 2px;
+    padding:1%;
     
-
 }
 
 .tijdtype{
     display: grid;
     grid-template-columns: 82% 18%;
-    border: solid blue 2px;
+    grid-column-gap: 10px;
 }
 
 .lijntype{
     width: 300px;
-    border: solid pink 3px;
+    background-color:white;
+    border-radius:10px;
+    border:#FFDD00 solid 2px;
+    padding:1%;
 }
 .vertrektijd {
-    border: solid red 1px;
     width: 40px;
     height: 15px;
-
+    background-color:white;
+    border-radius:10px;
+    border:#FFDD00 solid 2px;
+    padding:2%;
+    margin-left: 16.5%;
 }
