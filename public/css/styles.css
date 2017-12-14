@@ -6,7 +6,7 @@ body {
     background-image: url(/img/bg.jpg);
     background-repeat:no-repeat;
     background-attachment: fixed;
-    
+
 }
 img {
     /*margin: 15px 30% 15px 38%;*/
@@ -88,7 +88,7 @@ h2 {
     color: #8f8f8f;
     opacity: 0.5;
     content: "|";
-    
+
 }
 .submit {
     margin: 2% 5%;
@@ -126,7 +126,7 @@ h2 {
 }
 
 .lijnnummer{
-    margin-left: 9%;    
+    margin-left: 9%;
     padding-top: 5px;
     height: 15px;
     width: 25px;
@@ -146,7 +146,7 @@ h2 {
     -moz-box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
     box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
     border: solid 2px #FFDD00;
-    
+
 }
 
 /****** VERTREK ******/
@@ -174,7 +174,7 @@ h2 {
     border-radius:10px;
     border:#FFDD00 solid 2px;
     padding:1%;
-    
+
 }
 
 .tijdtype{
@@ -199,4 +199,11 @@ h2 {
     border:#FFDD00 solid 2px;
     padding:2%;
     margin-left: 16.5%;
+}
+
+.pError{
+  text-align: center;
+  color: #575E61;
+  font-size: 1.2em;
+  font-weight: 700;
 }

@@ -40,19 +40,23 @@ module.exports = vertrekken
         <div class="huidigedag">
           <p>${resultaten.huidigeDag} | ${resultaten.huidigeTijd}</p>
         </div> `
+        if( resultaten.lijnen.length === 0)
+          return  `
+                <p class="pError">Oeps je hebt de foute halte ID ingevoerd!</p>
+          `
 
     for (var i = 0; i < resultaten.lijnen.length; i++) {
       resultaten.lijnen[i]
       lijnen = resultaten.lijnen[i]
-        
-            html += 
-            `<div class="vertrek"> 
+            html +=
+            `<div class="vertrek">
                 <p class="vertreknummer">${lijnen.lijnNummer}</p>
             <div class="tijdtype">
                 <p class="lijntype">${lijnen.lijnType} | ${lijnen.lijnRichting}</p>
                 <p class="vertrektijd">${lijnen.vertrekTijd}</p>
                 </div>
-            </div>` 
+            </div>`
+
     }
 
       return html;

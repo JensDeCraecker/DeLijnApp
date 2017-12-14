@@ -37,8 +37,7 @@ const getHaltes = resultaten => {
 
   if( haltes.length === 0)
     return  `
-          <p>Er werd geen halte gevonden</p>
-          <a href="/halten"><button>back</button></a>
+          <p class="pError">Er werd geen halte gevonden</p>
     `
 
   haltes.forEach( halte => {
