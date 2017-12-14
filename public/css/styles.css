@@ -104,7 +104,7 @@ h2 {
     margin-bottom: 20px;
     font-weight: 400;
 }
-.lijnItem {
+.lijnItem, .vertrek {
     margin:10px 0px 0px 20px;
 }
 .lijn {
@@ -146,4 +146,21 @@ h2 {
     box-shadow: 6px 9px 12px 0.5px rgba(209,209,209,1);
     border: solid 2px #FFDD00;
     
+}
+
+/****** VERTREK ******/
+.vertrek {
+    border: solid green 1px;
+}
+.bestemming {
+    border: solid red 1px;
+}
+.vertreknummer {
+    border: solid orange 1px;
+}
+.lijnrichting {
+    border: solid blue 1px;
+}
+.vertrektijd {
+    border: solid yellow 1px;
 }

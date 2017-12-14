@@ -44,12 +44,12 @@ module.exports = vertrekken
     for (var i = 0; i < resultaten.lijnen.length; i++) {
       resultaten.lijnen[i]
       lijnen = resultaten.lijnen[i]
-    html += `<div>
-      <p>${lijnen.bestemming}</p>
-      <p>${lijnen.lijnNummer}</p>
-      <p>${lijnen.lijnRichting}</p>
-      <p>${lijnen.lijnType}</p>
-      <p>${lijnen.vertrekTijd}</p>
+    html += `<div class="vertrek">
+      <p class="bestemming">${lijnen.bestemming}</p>
+      <p class="vertreknummer">${lijnen.lijnNummer}</p>
+      <p class="lijnrichting">${lijnen.lijnRichting}</p>
+      <p class="lijntype">${lijnen.lijnType}</p>
+      <p class="vertrektijd">${lijnen.vertrekTijd}</p>
     </div>`
 
     }
