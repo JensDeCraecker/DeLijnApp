@@ -185,6 +185,7 @@ h2 {
 
 .lijntype{
     width: 300px;
+    height: 28px;
     background-color:white;
     border-radius:10px;
     border:#FFDD00 solid 2px;
