@@ -5,6 +5,7 @@ body {
     font-family: 'Nunito', sans-serif;
     background-image: url(/img/bg.jpg);
     background-repeat:no-repeat;
+    background-attachment: fixed;
     
 }
 img {
@@ -104,7 +105,7 @@ h2 {
     margin-bottom: 20px;
     font-weight: 400;
 }
-.lijnItem, .vertrek {
+.lijnItem{
     margin:10px 0px 0px 20px;
 }
 .lijn {
@@ -149,18 +150,44 @@ h2 {
 }
 
 /****** VERTREK ******/
+.huidigedag {
+    text-align: center;
+    margin: 0 0 2% 0;
+}
+.huidigedag p{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #575E61;
+}
 .vertrek {
+    font-size:0.85em;
     border: solid green 1px;
+    text-align: center;
+
 }
-.bestemming {
-    border: solid red 1px;
-}
+
 .vertreknummer {
     border: solid orange 1px;
+    width: 25px;
+    height: 15px;
+    margin: auto;
+    
+
 }
-.lijnrichting {
-    border: solid blue 1px;
+
+.tijdtype{
+    display: grid;
+    grid-template-columns: 82% 18%;
+    border: solid blue 2px;
+}
+
+.lijntype{
+    width: 300px;
+    border: solid pink 3px;
 }
 .vertrektijd {
-    border: solid yellow 1px;
+    border: solid red 1px;
+    width: 40px;
+    height: 15px;
+
 }

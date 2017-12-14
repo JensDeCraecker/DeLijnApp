@@ -37,21 +37,22 @@ module.exports = vertrekken
 
   const getVertrek = resultaten => {
     let html =`
-        <div>
-          <p>${resultaten.huidigeDag}</p> | <p>${resultaten.huidigeTijd}</p>
+        <div class="huidigedag">
+          <p>${resultaten.huidigeDag} | ${resultaten.huidigeTijd}</p>
         </div> `
 
     for (var i = 0; i < resultaten.lijnen.length; i++) {
       resultaten.lijnen[i]
       lijnen = resultaten.lijnen[i]
-    html += `<div class="vertrek">
-      <p class="bestemming">${lijnen.bestemming}</p>
-      <p class="vertreknummer">${lijnen.lijnNummer}</p>
-      <p class="lijnrichting">${lijnen.lijnRichting}</p>
-      <p class="lijntype">${lijnen.lijnType}</p>
-      <p class="vertrektijd">${lijnen.vertrekTijd}</p>
-    </div>`
-
+        
+            html += 
+            `<div class="vertrek"> 
+                <p class="vertreknummer">${lijnen.lijnNummer}</p>
+            <div class="tijdtype">
+                <p class="lijntype">${lijnen.lijnType} | ${lijnen.lijnRichting}</p>
+                <p class="vertrektijd">${lijnen.vertrekTijd}</p>
+                </div>
+            </div>` 
     }
 
       return html;

@@ -1,4 +1,8 @@
 <% include header%>
 <h2><i class="fa fa-road fa-1x i" aria-hidden="true"></i>   Vertrokken</h2 >
+<form method="get" action="/vertrekken">
+  <input type="text" name="halte_id" value="" class="inputhalte" required placeholder="   | HALTENUMMER">
+  <input type="submit" class="submit" value="OPNIEUW ZOEKEN">
+</form>
 <%- vertrekInfo %>
 <% include footer%>
